@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>UniWayTR — Обучение в Турции без экзаменов</title>
+
+<!-- Favicon (по желанию, можно добавить позже)
+<link rel="icon" type="image/png" href="favicon.png">
+-->
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #0b5ed7, #b02a37);
+    color: white;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.logo {
+    max-width: 180px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* BUTTON */
+button {
+    background: #ffffff;
+    color: #0b5ed7;
+    border: none;
+    padding: 15px 25px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #e9ecef;
+}
+
+/* SECTIONS */
+section {
+    padding: 50px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h2 {
+    color: #0b5ed7;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* FORM */
+.form-box {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* FOOTER */
+footer {
+    background: #0b5ed7;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+.whatsapp-btn:hover {
+    background: #1ebe5d;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <img src="logo.png" alt="UniWayTR Logo" class="logo">
+    <h1>UniWayTR — обучение в Турции</h1>
+    <p>
+        Поступление в университеты Турции  
+        <strong>БЕЗ ЭКЗАМЕНОВ</strong> и лишнего стресса
+    </p>
+    <button onclick="document.getElementById('tg-form').scrollIntoView({behavior:'smooth'})">
+        Получить бесплатную консультацию
+    </button>
+</header>
+
+<!-- WHY TURKEY -->
+<section>
+<h2>Почему Турция?</h2>
+<div class="cards">
+    <div class="card">🎓 Международные дипломы</div>
+    <div class="card">🚫 Вход без экзаменов</div>
+    <div class="card">💰 Доступная стоимость обучения</div>
+    <div class="card">🌍 Обучение на турецком и английском</div>
+    <div class="card">🏫 Современные кампусы</div>
+    <div class="card">🤝 Комфортная адаптация</div>
+</div>
+</section>
+
+<!-- WHY US -->
+<section>
+<h2>Почему выбирают UniWayTR</h2>
+<div class="cards">
+    <div class="card">✔ Прямое сотрудничество с университетами</div>
+    <div class="card">✔ Без скрытых платежей</div>
+    <div class="card">✔ Поддержка до и после поступления</div>
+    <div class="card">✔ Опыт работы со студентами из СНГ</div>
+</div>
+</section>
+
+<!-- PROGRAMS -->
+<section>
+<h2>Направления обучения</h2>
+<ul>
+    <li>Медицина</li>
+    <li>Инженерия</li>
+    <li>IT и программирование</li>
+    <li>Бизнес и экономика</li>
+    <li>Архитектура и дизайн</li>
+    <li>Гуманитарные специальности</li>
+</ul>
+</section>
+
+<!-- STEPS -->
+<section>
+<h2>Как проходит поступление</h2>
+<ul>
+    <li>📞 Бесплатная консультация</li>
+    <li>📄 Проверка документов</li>
+    <li>🎓 Подбор университета</li>
+    <li>📝 Подача заявки (во многие ВУЗы — без экзаменов)</li>
+    <li>✈️ Переезд и заселение</li>
+</ul>
+</section>
+
+<!-- PRICES -->
+<section>
+<h2>Стоимость обучения</h2>
+<ul>
+    <li>Государственные университеты — от <strong>300$ в год</strong></li>
+    <li>Частные университеты — от <strong>2000$ в год</strong></li>
+    <li>Подготовительный языковой год — по желанию</li>
+</ul>
+</section>
+
+<!-- FORM -->
+<section>
+<h2>Оставьте заявку</h2>
+<p><strong>Консультация бесплатная и ни к чему не обязывает</strong></p>
+
+<div class="form-box">
+<form id="tg-form">
+    <input type="text" name="name" placeholder="Ваше имя" required>
+    <input type="text" name="phone" placeholder="Телефон / WhatsApp" required>
+    <input type="text" name="city" placeholder="Город">
+    <textarea name="message" rows="4" placeholder="Ваш вопрос"></textarea>
+    <button type="submit">Отправить заявку</button>
+</form>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2025 UniWayTR — Обучение в Турции без экзаменов</p>
+</footer>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/905056710193" class="whatsapp-btn" target="_blank">
+💬 WhatsApp
+</a>
+
+    </script>
+
+</body>
+</html>
